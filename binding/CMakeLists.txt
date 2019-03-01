@@ -3,7 +3,7 @@
 # Copyright 2016 The Charon Platform Authors.
 #
 # All rights reserved.
-# Use of this source code is governed by a BSD-style
+# Use of this source code is governed by a CPOL
 # license that can be found in the LICENSE file.
 #
 # ------------------------------------------------------------------------------
@@ -22,4 +22,4 @@ find_package(Qt5Network)
 
 set_target_properties(Excel PROPERTIES PREFIX "")
 
-target_link_libraries(Excel Qt5::Core Qt5::Network charon lua package-excel)
+target_link_libraries(Excel Qt5::Core Qt5::Network charon lua excel)
