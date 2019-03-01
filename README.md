@@ -40,7 +40,7 @@ Linking CXX shared library ../../../deps/libexcel.so
 Linking CXX shared library ../../../../clib/charon/doc/Excel.so
 ```
 
-### Examples
+### EXAMPLE
 - Create and read xls file
 
 ```
