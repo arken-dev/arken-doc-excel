@@ -33,5 +33,5 @@ assert( cell1:getString() == "Hello World !", cell1:getString() )
 ```
 more examples in tests directory
 
-##LICENSE
+## LICENSE
 This project is licensed under the CPOL License - see the [LICENSE.md](LICENSE.md) file for details
