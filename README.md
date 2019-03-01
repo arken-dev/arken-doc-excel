@@ -45,19 +45,19 @@ Linking CXX shared library ../../../../clib/charon/doc/Excel.so
 
 ```
 local workbook  = Excel.workbook()
-local worksheet = workbook:addWorksheet("Planilha1")
+local worksheet = workbook:addWorksheet("worksheet-1")
 local cell      = worksheet:cell(1, 1)
 cell:setString("Hello World !")
 workbook:save("myfile.xls")
 
 local workbook1  = Excel.workbook()
 workbook1:load("myfile.xls")
-local worksheet1 = workbook:getWorksheet("Planilha1")
+local worksheet1 = workbook:getWorksheet("worksheet-1")
 local cell1      =  worksheet1:cell(1, 1)
 
 assert( cell1:getString() == "Hello World !", cell1:getString() )
 ```
-more examples in tests directory
+- more examples in tests directory
 
 ## LICENSE
 This project is licensed under the CPOL License - see the [LICENSE.md](LICENSE.md) file for details
