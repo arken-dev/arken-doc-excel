@@ -2,7 +2,7 @@
 
 Package for support excel read/writer in charon platform.
 
-# BUILD
+## BUILD
 
 clone in package directory
 
@@ -14,9 +14,10 @@ cd charonplatform
 - cmake ..
 - make -j4 (4 is number of cores)
 
-# Examples
-
+### Examples
 - Create and read xls file
+
+```
 local workbook  = Excel.workbook()
 local worksheet = workbook:addWorksheet("Planilha1")
 local cell      = worksheet:cell(1, 1)
@@ -29,5 +30,8 @@ local worksheet1 = workbook:getWorksheet("Planilha1")
 local cell1      =  worksheet1:cell(1, 1)
 
 assert( cell1:getString() == "Hello World !", cell1:getString() )
+```
+more examples in tests directory
 
-- more example in tests directory
+##LICENSE
+This project is licensed under the CPOL License - see the [LICENSE.md](LICENSE.md) file for details
