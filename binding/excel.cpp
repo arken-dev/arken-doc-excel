@@ -1534,7 +1534,7 @@ static const struct luaL_Reg lxlslib[] = {
 	lxls_wchar_new(L, fieldName); \
 	lua_setfield(L, -2, #fieldName);
 
-extern "C" int luaopen_charon_doc_Excel(lua_State* L)
+extern "C" int luaopen_arken_doc_Excel(lua_State* L)
 {
 	lua_newtable(L);
 	luaL_register(L, NULL, lxlslib);
@@ -1726,4 +1726,7 @@ extern "C" int luaopen_charon_doc_Excel(lua_State* L)
 	return 1;
 }
 
-
+extern "C" int luaopen_charon_doc_Excel(lua_State* L)
+{
+  luaopen_arken_doc_Excel(L);
+}
