@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------
 #
-# Copyright 2016 The Charon Platform Authors.
+# Copyright 2016 The Arken Platform Authors.
 #
 # All rights reserved.
 # Use of this source code is governed by a CPOL
@@ -24,8 +24,11 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/deps)
 
 find_package(Qt5Core)
 find_package(Qt5Network)
+find_package(Qt5Gui)
+find_package(Qt5Widgets)
 
-target_link_libraries( excel Qt5::Core lua charon curl json )
+
+target_link_libraries( excel Qt5::Core lua arken curl json )
 target_link_libraries( excel Qt5::Network )
 
 add_subdirectory(binding)

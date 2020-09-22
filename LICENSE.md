@@ -1,5 +1,5 @@
 Copyright (c) 2009 - 2011 Martin Fuchs <martin-fuchs@gmx.net>
-Copyright (c) 2015 - 2017 Charon Platform Team All rights reserved.
+Copyright (c) 2015 - 2017 Arken Platform Team All rights reserved.
 
 License: CPOL
 

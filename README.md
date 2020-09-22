@@ -1,14 +1,14 @@
-# CHARON DOC EXCEL
+# ARKEN DOC EXCEL
 
-Package for support excel read/writer in charon platform.
+Package for support excel read/writer in arken platform.
 
 ## BUILD
 
 - clone in package directory
 ```
-cd charonplatform
-git clone git@github.com:charonplatform/charon-doc-excel.git packages/charon-doc-excel
-Cloning into 'packages/charon-doc-excel'...
+cd arkenplatform
+git clone git@github.com:arkenplatform/arken-doc-excel.git packages/arken-doc-excel
+Cloning into 'packages/arken-doc-excel'...
 remote: Enumerating objects: 30, done.
 remote: Counting objects: 100% (30/30), done.
 remote: Compressing objects: 100% (22/22), done.
@@ -26,18 +26,18 @@ cd build
 cmake ..
 make -j4 (4 is number of cores)
 
-CHARON BACKEND embedded
-CHARON BASE64 embedded
-CHARON DIGEST embedded
-CHARON MVM CONTAINER deque-stack
+ARKEN BACKEND embedded
+ARKEN BASE64 embedded
+ARKEN DIGEST embedded
+ARKEN MVM CONTAINER deque-stack
 etc, etc
-PACKAGE: charon-doc-excel
+PACKAGE: arken-doc-excel
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/ariveira/projetos/charon/build
+-- Build files have been written to: /home/ariveira/projetos/arken/build
 
 Linking CXX shared library ../../../deps/libexcel.so
-Linking CXX shared library ../../../../clib/charon/doc/Excel.so
+Linking CXX shared library ../../../../clib/arken/doc/Excel.so
 ```
 
 ## EXAMPLE

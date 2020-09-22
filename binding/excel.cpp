@@ -1,4 +1,4 @@
-#include <charon/doc/excelformat.h>
+#include <arken/doc/excelformat.h>
 
 using namespace ExcelFormat;
 
@@ -1724,9 +1724,4 @@ extern "C" int luaopen_arken_doc_Excel(lua_State* L)
 	REGISTER_FIELD(EGA_CYAN);
 
 	return 1;
-}
-
-extern "C" int luaopen_charon_doc_Excel(lua_State* L)
-{
-  luaopen_arken_doc_Excel(L);
 }
