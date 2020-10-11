@@ -44,6 +44,8 @@ Linking CXX shared library ../../../../clib/arken/doc/Excel.so
 - Create and read xls file
 
 ```
+local Excel = require('arken.doc.Excel')
+
 local workbook  = Excel.workbook()
 local worksheet = workbook:addWorksheet("worksheet-1")
 local cell      = worksheet:cell(1, 1)
