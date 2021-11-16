@@ -22,13 +22,6 @@ add_library(
 
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/deps)
 
-find_package(Qt5Core)
-find_package(Qt5Network)
-find_package(Qt5Gui)
-find_package(Qt5Widgets)
-
-
-target_link_libraries( excel Qt5::Core lua arken curl json )
-target_link_libraries( excel Qt5::Network )
+target_link_libraries( excel lua arken )
 
 add_subdirectory(binding)

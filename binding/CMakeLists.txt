@@ -18,11 +18,6 @@ add_library(
   Excel SHARED excel.cpp
 )
 
-find_package(Qt5Core)
-find_package(Qt5Network)
-find_package(Qt5Gui)
-find_package(Qt5Widgets)
-
 set_target_properties(Excel PROPERTIES PREFIX "")
 
-target_link_libraries(Excel Qt5::Core Qt5::Network Qt5::Gui Qt5::Widgets arken lua excel)
+target_link_libraries(Excel arken lua excel)
