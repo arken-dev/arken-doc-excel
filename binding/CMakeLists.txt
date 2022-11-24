@@ -20,4 +20,4 @@ add_library(
 
 set_target_properties(Excel PROPERTIES PREFIX "")
 
-target_link_libraries(Excel arken lua excel)
+target_link_libraries(Excel arken excel)

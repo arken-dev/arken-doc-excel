@@ -22,6 +22,6 @@ add_library(
 
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/deps)
 
-target_link_libraries( excel lua arken )
+target_link_libraries( excel arken )
 
 add_subdirectory(binding)
